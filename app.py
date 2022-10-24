@@ -18,11 +18,11 @@ option2 = st.selectbox(
 file_up = st.file_uploader("Upload an image", type="jpg")
 if file_up is None:
     if option2 =="image_dog":
-        image=Image.open("dog.jpg")
-        file_up="dog.jpg"
+        image=Image.open("image/dog.jpg")
+        file_up="image/dog.jpg"
     else:
-        image=Image.open("snake.jpg")
-        file_up="snake.jpg"
+        image=Image.open("image/snake.jpg")
+        file_up="image/snake.jpg"
     st.image(image, caption='Uploaded Image.', use_column_width=True)
     st.write("")
     st.write("Just a second...")
